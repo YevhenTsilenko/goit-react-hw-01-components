@@ -1,0 +1,30 @@
+.statistics {
+    margin: 0 auto;
+    max-height: 250px;
+}
+
+.title {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.89);
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.stat_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(122, 245, 245);
+    border: 1px solid #ffffff;
+}
