@@ -5,13 +5,13 @@ import user from './components/social-profile/user.json';
 import Profile from './components/social-profile/profile';
 import statisticalData from './components/statistics/statistical-data.json';
 import Statistics from './components/statistics/statistics';
-import TransactionHistory from './components/transaction-history/transactions';
+import TransactionHistory from './components/transaction-history/transactionsHistory';
 import transactions from './components/transaction-history/transactions.json';
 
 function App() {
   return (
     <div className="App">
-      <h2 className="title">-------Prifile-------</h2>
+      <h2 className="title">-------Profile-------</h2>
       <Profile 
         name={user.name}
         tag={user.tag}
@@ -24,6 +24,7 @@ function App() {
       <Statistics stats={statisticalData} />;
       <h2 className="title">-------Friends list-------</h2>
       <FriendList friends={friends} />
+      <h2 className="title">-------Transactions-------</h2>
       <TransactionHistory items={transactions} />
     </div>
   );
