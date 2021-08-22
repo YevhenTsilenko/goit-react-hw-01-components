@@ -1,4 +1,5 @@
 import styles from './transactions.module.css';
+import TransitionItem from './transitionItem';
 
 function TransactionHistory({ items }) {
     return (
@@ -12,12 +13,13 @@ function TransactionHistory({ items }) {
             </thead>
 
             <tbody>
-                {items.map(({ id, currency, amount, type }) => (
-                        <tr key={id}>
-                            <td className={styles.row}>{type}</td>
-                            <td className={styles.row}>{amount}</td>
-                            <td className={styles.row}>{currency}</td>
-                      </tr>
+                {items.map((item) => (
+                       <TransitionItem 
+                            key={item.id}
+                            type={item.type}
+                            amount={item.amount}
+                            currency={item.currency}
+                       />
                 ))}
             </tbody>
         </table>
